@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Tael Oliveira",
+  name: "Tael de Oliveira",
   description:
     "Front End Developer | React, TypeScript & User-Centric Solutions | Sydney",
   navItems: [

@@ -1,5 +1,5 @@
 export const portfolio = {
-  name: "Tael Oliveira",
+  name: "Tael de Oliveira",
   title: "Front End Developer",
   tagline:
     "Specializing in React, TypeScript, and User-Centric Solutions | API Integration",
