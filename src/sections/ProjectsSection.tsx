@@ -1,8 +1,8 @@
-import { Button } from "@heroui/button";
-import { Link } from "@heroui/link";
-import { motion } from "framer-motion";
-import { title } from "@/components/primitives";
-import { portfolio } from "@/data/portfolio";
+import { Button } from '@heroui/button';
+import { Link } from '@heroui/link';
+import { motion } from 'framer-motion';
+import { title } from '@/components/primitives';
+import { portfolio } from '@/data/portfolio';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 24 },
@@ -15,40 +15,40 @@ const cardVariants = {
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-16 md:py-24 scroll-mt-20">
+    <section id='projects' className='py-16 md:py-24 scroll-mt-20'>
       <motion.h2
-        className={title({ size: "sm", class: "mb-10 text-center" })}
+        className={title({ size: 'lg', class: 'mb-10 text-center' })}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
         Projects
       </motion.h2>
-      <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto">
+      <div className='grid gap-6 sm:grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto mt-4'>
         {portfolio.projects.map((project, i) => (
           <motion.article
             key={project.id}
-            className="rounded-2xl border border-default-200 bg-content1/50 p-6 shadow-sm hover:shadow-md transition-shadow"
+            className='rounded-2xl border border-default-200 bg-content1/50 p-7 shadow-sm hover:shadow-md transition-shadow'
             custom={i}
             variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-40px" }}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, margin: '-40px' }}
           >
-            <h3 className="text-lg font-semibold text-foreground mb-2">
+            <h3 className='text-xl font-semibold text-foreground mb-3'>
               {project.title}
             </h3>
-            <p className="text-default-600 text-sm leading-relaxed mb-4">
+            <p className='text-default-600 text-base leading-relaxed mb-4'>
               {project.description}
             </p>
-            <p className="text-default-500 text-xs mb-3">
-              <span className="font-medium">Role:</span> {project.role}
+            <p className='text-default-500 text-sm mb-4'>
+              <span className='font-medium'>Role:</span> {project.role}
             </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
+            <div className='flex flex-wrap gap-2 mb-4'>
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="text-xs px-2 py-0.5 rounded-md bg-primary/10 text-primary"
+                  className='text-sm px-2.5 py-1 rounded-md bg-primary/10 text-primary'
                 >
                   {tech}
                 </span>
@@ -59,9 +59,9 @@ export function ProjectsSection() {
                 as={Link}
                 isExternal
                 href={project.link}
-                size="sm"
-                variant="flat"
-                color="primary"
+                size='md'
+                variant='flat'
+                color='primary'
               >
                 View project
               </Button>
