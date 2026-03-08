@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { title } from '@/components/primitives';
 import { portfolio } from '@/data/portfolio';
 import ScrollReveal from '@/components/ScrollReveal';
 

@@ -6,7 +6,7 @@ import { LinkedInIcon } from '@/components/icons';
 import { title, subtitle } from '@/components/primitives';
 import { portfolio } from '@/data/portfolio';
 import { siteConfig } from '@/config/site';
-import LiquidEther from '@/components/LiquidEther';
+import LiquidEther from '@/components/LiquidEther.jsx';
 
 const container = {
   hidden: { opacity: 0 },
@@ -25,7 +25,10 @@ export function HeroSection() {
   return (
     <div className='relative w-full min-h-screen'>
       {/* Liquid Ether background - full bleed behind content */}
-      <div className='absolute inset-0 z-0' style={{ width: '100%', height: '100%' }}>
+      <div
+        className='absolute inset-0 z-0'
+        style={{ width: '100%', height: '100%' }}
+      >
         <LiquidEther
           colors={['#5227FF', '#FF9FFC', '#B19EEF']}
           mouseForce={20}
@@ -117,16 +120,16 @@ export function HeroSection() {
               Get in Touch
             </Button>
             <Button
-            as='a'
-            href='/Tael-de-Oliveira-CV.pdf'
-            download='Tael-de-Oliveira-CV.pdf'
-            variant='flat'
-            radius='full'
-            size='md'
-            color='secondary'
-          >
-            Download CV
-          </Button>
+              as='a'
+              href='/Tael-de-Oliveira-CV.pdf'
+              download='Tael-de-Oliveira-CV.pdf'
+              variant='flat'
+              radius='full'
+              size='md'
+              color='secondary'
+            >
+              Download CV
+            </Button>
           </motion.div>
         </motion.div>
 

@@ -16,3 +16,31 @@ declare module '@/components/ScrollReveal' {
   }) => JSX.Element;
   export default ScrollReveal;
 }
+
+declare module "@/components/LiquidEther.jsx" {
+  const LiquidEther: (props: {
+    mouseForce?: number;
+    cursorSize?: number;
+    isViscous?: boolean;
+    viscous?: number;
+    iterationsViscous?: number;
+    iterationsPoisson?: number;
+    dt?: number;
+    BFECC?: boolean;
+    resolution?: number;
+    isBounce?: boolean;
+    colors?: string[];
+    style?: React.CSSProperties;
+    className?: string;
+    autoDemo?: boolean;
+    autoSpeed?: number;
+    autoIntensity?: number;
+    takeoverDuration?: number;
+    autoResumeDelay?: number;
+    autoRampDuration?: number;
+    color0?: string;
+    color1?: string;
+    color2?: string;
+  }) => JSX.Element;
+  export default LiquidEther;
+}
